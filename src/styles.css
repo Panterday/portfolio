@@ -1,38 +1,147 @@
-@font-face {
-    font-family: "Chalet";
-    src: url("./assets/chalet.woff") format("woff");
-}
 
-html {
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+
+
+*{
     box-sizing: border-box;
-    font-family: "Chalet", sans-serif;
-    font-size: 16px;
-    background-color: #2b3a42;
-    color: #8dd6f9;
-    background-image: url("assets/cohete.jpg");
-}
-
-.icon {
-    max-width: 4rem;
-}
-
-#secondImage{
-    width: 300px;
-}
-body{
     margin: 0;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color: #111111;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* defining zones */
+
+.header{
+    grid-area: header;
+}
+
+.nav-bar{
+    grid-area: navbar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.subfooter{
+    grid-area: subfooter;
+}
+
+.allContent{
+    grid-template:
+        "header" 9%
+        "navbar" 91%
+        "main"
+        "footer" 
+        "subfooter" 
+    ;
+}
+
+.allContent {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer"
+        "subfooter"
+    ;
+}
+
+/* styling zones */
+
+.allContent > *{
     text-align: center;
 }
 
-a {
-    color: white;
+/* Styling header */
+.header{
+    background-color: #111111;
+    position: fixed;
+    width: 100%;
+    /* box-shadow: 0px 1px 10px black; */
+    z-index: 10;
+    /* top: 0;
+    left: 0;  */
+    font-size: 1.2em;
+    color: #02f0f0;
 }
 
-.myMenu {
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-evenly;
+.header h1{
+    padding: 0.3em;
 }
+
+.menu{
+    float: right;
+    padding: 1.5%;
+    width: 40em;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 2em;
+    color: #02f0f0;
+}
+
+.header h1{
+    float: left;
+    margin-left: 2em;
+}
+
+/* Styling navbar */
+.nav-bar{
+    background-color: #111111;
+    background-image: url(./assets/backgroundnav.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    text-align: left;
+    height: 24em;
+    width: 40em;
+    padding: 2%;
+}
+
+.hero h1{
+    /* color: #02f0f0; */
+    color: whitesmoke;
+    font-size: 6em;
+    margin-top: 0.5em;
+}
+
+.hero p{
+    color: #02f0f0;
+    font-size: 2em;
+}
+
+/* styling main */
+.main{
+    
+}
+
+/* Styling main content */
+
+.main-content{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    background-color: #202020;
+}
+
+
+
+
