@@ -43,9 +43,9 @@ body{
 .allContent{
     grid-template:
         "header" 9%
-        "navbar" 91%
+        "navbar" 75%
         "main"
-        "footer" 
+        "footer" 20em
         "subfooter" 
     ;
 }
@@ -107,6 +107,15 @@ body{
     background-image: url(./assets/backgroundnav.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative; 
+}
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+    position: absolute;
+    
 }
 
 .hero{
@@ -114,6 +123,9 @@ body{
     height: 24em;
     width: 40em;
     padding: 2%;
+    z-index: 0;
+    margin-left: 3%;
+    margin-top: 1%; 
 }
 
 .hero h1{

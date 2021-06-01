@@ -1,6 +1,9 @@
-import gsap from 'gsap'; 
 import './styles.css';
+import { myAnimations } from './js/animations';
+import { initParticles } from './js/particles-function';
 
-console.log("hola prueba 2")
+//Starting particles
+initParticles(); 
 
-gsap.from('#logo', {opacity: 0, duration: 1, y: -50})
+//Working with animations
+myAnimations(); 
