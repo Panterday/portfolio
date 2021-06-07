@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const scrollAnimations = ()=>{
     gsap.from('#titlePortfolio', {
         scrollTrigger: {
-            trigger: '#titlePortfolio',
+            trigger: '.imgP1',
             start: 'top 80%',
         }, 
         x: 50,
@@ -17,7 +17,7 @@ export const scrollAnimations = ()=>{
 
     gsap.from('#line1', {
         scrollTrigger: {
-            trigger: '#titlePortfolio',
+            trigger: '.imgP1',
             start: 'top 80%',
         }, 
         y: -50,

@@ -194,6 +194,11 @@ body{
 }
 
 /* Styling navbar */
+
+.side-menu{
+    display: none; 
+}
+
 .nav-bar{
     background-color: #111111;
     background-image: url(./assets/backgroundnav.jpg);
@@ -207,7 +212,6 @@ body{
     width: 100%;
     z-index: 1; 
     position: absolute;
-    
 }
 
 .hero{
@@ -445,4 +449,172 @@ body{
 
 #contentFooter p{
     color: #F3F3F3; 
+}
+
+/* Working with responsive design */
+
+@media (max-width: 500px){
+    .allContent{
+        grid-template:
+            "header"
+            "side-menu" 
+            "navbar" 100vh
+            "main" 
+            "experience" 
+            "contact"
+            "footer"
+        ;
+    }
+
+    .nav-bar{
+        background-color: #111111;
+        background-image: url(./assets/backgroundmob.jpg);
+        /* background-size: 100vh; */
+        background-repeat: no-repeat;
+        position: relative; 
+    }
+
+    #particles-js{
+        height: 100vh;
+        width: 100vw;
+        z-index: 1; 
+        position: fixed;
+    }
+
+    .header{
+        background-color: #111111;
+        opacity: 0.8;
+        position: fixed;
+        width: 100%;
+        /* box-shadow: 0px 1px 10px black; */
+        z-index: 10;
+        /* top: 0;
+        left: 0;  */
+        color: #08FDD8;
+        height: 4em;
+    }
+
+    .side-menu{
+        display: inline;
+        position: fixed;
+        /* background-color: #111111; */
+        background-color: white;
+        opacity: 0.8;
+        margin-left: 43%;
+        height: 50vh;
+        z-index: 40;
+        margin-top: 35%;
+        display: none;
+    }
+
+    .side-menu p{
+        font-size: 0.5em;
+    }
+
+    .contentSide-menu{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .hero{
+        text-align: left;
+        width: 70%;
+        padding: 3%;
+        z-index: 0;
+        margin-left: 3%;
+        margin-top: 40%;
+    }
+
+    .hero h1{
+        font-size: 5em;
+        line-height: 1em;
+    }
+
+    .hero p{
+        margin-top: 2em;
+        font-size: 1em;
+    }
+
+    .line{
+        width: 20%;
+    }
+
+    #project1{
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .image{
+        width: 100%;
+        padding: 0%;
+    }
+
+    .imgP1{
+        width: 100%;
+        box-shadow: 0px 1px 10px black;
+        border-radius: 4px;
+    }
+
+    .description{
+        width: 100%; 
+    }
+
+    .text{
+        font-size: 1.5em;
+        padding-top: 4%;
+    }
+
+    .skillSet{
+        margin-top: 4em;
+        height: auto;
+    }
+
+    .contentSkillSet{
+        height: auto;
+        justify-content: left;
+    }
+
+    .logo{
+        height: 5em;
+    }
+
+    #experienceZone{
+        margin-top: 4em;
+    }
+
+    .resume{
+        width: 100%;
+    }
+
+    .contentExperience{
+        width: 90%;
+    }
+
+    .ulQualifications{
+        padding: 2em;
+    }
+
+    .contactDiv{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #contactHead{
+        font-size: 1.5em;
+        width: 100%; 
+    }
+
+    #mail{
+        font-size: 1.8em;
+    }
+
 }

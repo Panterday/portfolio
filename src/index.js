@@ -10,7 +10,7 @@ startPreloadLogo();
 
 
 //Starting particles
-initParticles(); 
+/* initParticles(); */ 
 
 //Working with animations
 myAnimations();
