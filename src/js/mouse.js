@@ -5,7 +5,7 @@ const hideHeader = ()=>{
         document.querySelector('.header').style.display = 'none'
     })
     document.querySelector('#myLink').addEventListener('click', ()=>{
-        document.querySelector('.header').style.display = 'none'
+        document.querySelector('.header').style.display = 'none'; 
     })
     document.querySelector('#experienceLink').addEventListener('click', ()=>{
         document.querySelector('.header').style.display = 'none'
@@ -16,21 +16,9 @@ const hideHeader = ()=>{
 }
 
 const showHeader = ()=>{
-    /* window.addEventListener('wheel', (event)=>{
-        console.log(document.querySelector('.header').style.display);
-        if(event.deltaY < 0){
-            if(document.querySelector('.header').style.display != 'inline' && document.querySelector('.header').style.display != ''){
-                document.querySelector('.header').style.display = 'inline'
-                animaHeaderShow('.header'); 
-                console.log('inside')
-            }
-        }else{
-            document.querySelector('.header').style.display = 'none'
-        }
-    }) */
     let lastScrollTop = 0; 
     document.addEventListener('scroll', ()=>{
-        let st = window.pageYOffset || document.documentElement.scrollTop; 
+        let st = window.pageYOffset || document.documentElement.scrollTop;
         if(st>lastScrollTop){
             document.querySelector('.header').style.display = 'none'
         }else{
@@ -43,9 +31,25 @@ const showHeader = ()=>{
     })
 }
 
+const divMenu = ()=>{
+    document.getElementById('myLinkM').addEventListener('click', ()=>{
+        animaMenuMobile('.menuMobile'); 
+    })
+    document.getElementById('skillsM').addEventListener('click', ()=>{
+        animaMenuMobile('.menuMobile'); 
+    })
+    document.getElementById('experienceLinkM').addEventListener('click', ()=>{
+        animaMenuMobile('.menuMobile'); 
+    })
+    document.getElementById('contactLinkM').addEventListener('click', ()=>{
+        animaMenuMobile('.menuMobile'); 
+    })
+}
+
 const startEvents = ()=>{
     hideHeader(); 
     showHeader(); 
+    divMenu(); 
 }
 
 export{

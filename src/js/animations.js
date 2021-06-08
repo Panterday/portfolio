@@ -58,7 +58,7 @@ const animaMenuMobile =(name)=>{
             gsap.from(name, {
                 opacity: 0, 
                 duration: 0.5, 
-                x: -80, 
+                x: -200, 
                 ease: 'Power2.easeOut', 
                 onComplete: ()=>{flag=true}
             })
@@ -74,7 +74,7 @@ const animaMenuMobile =(name)=>{
             gsap.to(name, {
                 opacity: 0.8, 
                 duration: 0.5, 
-                x: 80, 
+                x: 200, 
                 ease: 'Power2.easeOut', 
                 onComplete: ()=>{flag=true; document.querySelector('.menuMobile').style.display = 'none';}
             })

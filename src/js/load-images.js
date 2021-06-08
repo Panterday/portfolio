@@ -29,11 +29,17 @@ const loadImage = (newIm, url)=>{
 }
 
 const loadLogo =(newLogo, description)=>{
+    const div = document.createElement('div'); 
     const logo = document.createElement('img');
+    const p = document.createElement('p');
+    p.innerHTML = description;
+    p.classList.add('descLogo'); 
     logo.classList.add('logo');
     logo.src = newLogo;
-    logo.title = description;  
-    divLog.appendChild(logo);
+    logo.title = description;
+    div.appendChild(logo);
+    div.appendChild(p);    
+    divLog.appendChild(div);
 }
 
 const replaceImage =(newImage)=>{
@@ -52,7 +58,7 @@ const loadImages =()=>{
     loadLogo(logoCSS, 'CSS 3');
     loadLogo(logoWB, 'Webpack');
     loadLogo(logoJAVA, 'Java');
-    loadLogo(logoNODE, 'NodeJS (Express library, Mongoose library)');
+    loadLogo(logoNODE, 'NodeJS');
     loadLogo(logoMONGO, 'MongoDB');
     loadLogo(logoSQL, 'MySql');
     loadLogo(logoGIT, 'GIT and GitHub');

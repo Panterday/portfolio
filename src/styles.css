@@ -349,6 +349,10 @@ body{
     
 }
 
+.descLogo{
+    display: none;
+}
+
 .logo{
     height: 8em;
     padding-left: 4em;
@@ -521,7 +525,7 @@ body{
     }
 
     .menuMobile{
-        display: none;
+        display: none; 
         flex-direction: column;
         background-color: #111111;
         width: 100%;
@@ -623,10 +627,17 @@ body{
 
     .contentSkillSet{
         height: auto;
+        padding-bottom: 1em;
     }
 
     .logo{
         padding: 5%;
+    }
+
+    .descLogo{
+        display: block;
+        color: #F3F3F3;
+
     }
 
     #experienceZone{

@@ -8,10 +8,6 @@ const startPreloadLogo = ()=>{
         initParticles(); 
         document.querySelector('.preload').style.display = 'none'; 
     }); 
-
-    /* window.addEventListener('resize', ()=>{
-        initParticles(); 
-    }) */
 }
 
 export{

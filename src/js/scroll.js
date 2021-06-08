@@ -134,4 +134,23 @@ export const scrollAnimations = ()=>{
         alpha: 0,
         duration: 1.5
     })
+
+    gsap.from('.logo', {
+        scrollTrigger: {
+            trigger: '.logo',
+            start: 'top 90%'
+        }, 
+        x: -50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('.descLogo', {
+        scrollTrigger: {
+            trigger: '.logo',
+            start: 'top 90%',
+        }, 
+        alpha: 0,
+        duration: 1.5
+    })
 }

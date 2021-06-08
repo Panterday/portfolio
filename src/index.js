@@ -9,10 +9,6 @@ import { startMobile } from './js/mobile';
 //Starting preloader
 startPreloadLogo(); 
 
-
-//Starting particles
-/* initParticles(); */ 
-
 //Working with animations
 myAnimations();
 
