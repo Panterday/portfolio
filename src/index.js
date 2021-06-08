@@ -4,6 +4,7 @@ import { initParticles } from './js/particles-function';
 import { loadImages } from './js/load-images';
 import {startEvents} from './js/mouse'
 import { startPreloadLogo } from './js/window';
+import { startMobile } from './js/mobile';
 
 //Starting preloader
 startPreloadLogo(); 
@@ -20,5 +21,8 @@ loadImages();
 
 //Starting mouse events
 startEvents(); 
+
+//Starting mobile events
+startMobile(); 
 
 

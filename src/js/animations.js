@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 
 let flag = true;
+let menuState = 0; 
 
 const myAnimations = ()=>{
     gsap.from('#logo', {opacity: 0, duration: 2, x: -80, ease: 'Power2.easeOut'})
@@ -32,6 +33,7 @@ const myAnimations = ()=>{
 }
 //Animating header
 const animaHeaderShow =(name)=>{
+    
     if(flag){
         flag=false; 
         gsap.from(name, {
@@ -44,7 +46,46 @@ const animaHeaderShow =(name)=>{
     }
 }
 
+const animaMenuMobile =(name)=>{
+    if(menuState == 0){
+        menuState = 1; 
+        gsap.set(name, {
+            y: 0,
+            x: 0
+        }); 
+        if(flag){
+            flag=false; 
+            gsap.from(name, {
+                opacity: 0, 
+                duration: 0.5, 
+                x: -80, 
+                ease: 'Power2.easeOut', 
+                onComplete: ()=>{flag=true}
+            })
+        }
+    }else{
+        menuState = 0;
+        gsap.set(name, {
+            y: 0,
+            x: 0 
+        }); 
+        if(flag){
+            flag=false; 
+            gsap.to(name, {
+                opacity: 0.8, 
+                duration: 0.5, 
+                x: 80, 
+                ease: 'Power2.easeOut', 
+                onComplete: ()=>{flag=true; document.querySelector('.menuMobile').style.display = 'none';}
+            })
+        }
+    }
+
+}
+
+
 export{
     myAnimations,
     animaHeaderShow,
+    animaMenuMobile,
 }

@@ -1,4 +1,4 @@
-import { animaHeaderShow} from "./animations"
+import { animaHeaderShow, animaMenuMobile} from "./animations"
 
 const hideHeader = ()=>{
     document.querySelector('#skills').addEventListener('click', ()=>{

@@ -148,6 +148,11 @@ body{
     color: #08FDD8;
 }
 
+.menuMobile{
+    background-color: red;
+    display: none;
+}
+
 #home{
     text-decoration: none;
 }
@@ -159,6 +164,10 @@ body{
 #logo:hover{
     color: #FFFFFF;
     transition: 0.2s;
+}
+
+#logoMenuResp{
+    display: none;
 }
 
 .header h1{
@@ -288,13 +297,19 @@ body{
     width: 50vw;
     box-shadow: 0px 1px 10px black;
     border-radius: 4px;
+    filter: grayscale(30%);
+}
+
+.imgP1:hover{
+    filter: none; 
 }
 
 .description{
     box-shadow: 0px 1px 10px black;
     border: solid 1px #08FDD8;
     border-radius: 5px;
-    width: 30%; 
+    width: 30%;
+    margin-top: 3%;
     margin-right: 5%;
 }
 .text{
@@ -313,7 +328,7 @@ body{
 }
 
 .skillSet{
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: rgb(40, 44, 44); */
     
     padding-top: 4em;
@@ -376,7 +391,7 @@ body{
 }
 
 #experienceZone{
-    padding-top: 2em;
+    padding-top: 5em;
 }
 
 .resume{
@@ -469,7 +484,7 @@ body{
     .nav-bar{
         background-color: #111111;
         background-image: url(./assets/backgroundmob.jpg);
-        /* background-size: 100vh; */
+        background-size: 100vh;
         background-repeat: no-repeat;
         position: relative; 
     }
@@ -492,6 +507,36 @@ body{
         left: 0;  */
         color: #08FDD8;
         height: 4em;
+    }
+
+    #logoMenuResp{
+        display: inline;
+        height: 2.4em;
+        margin-left: 8em;
+        margin-top: 0.8em;
+
+    }
+
+    #logoMenuResp:hover{
+    }
+
+    .menuMobile{
+        display: none;
+        flex-direction: column;
+        background-color: #111111;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.8;
+        z-index: 200;
+        position: fixed;
+        margin-top: 4em;
+    }
+
+    .menuMobile a{
+        padding: 2em;
+        color: #F3F3F3;
+        text-decoration: none;
+        font-size: 1.4em;
     }
 
     .side-menu{
@@ -559,10 +604,11 @@ body{
         width: 100%;
         box-shadow: 0px 1px 10px black;
         border-radius: 4px;
+        filter: none;
     }
 
     .description{
-        width: 100%; 
+        width: 100%;
     }
 
     .text{
@@ -577,11 +623,10 @@ body{
 
     .contentSkillSet{
         height: auto;
-        justify-content: left;
     }
 
     .logo{
-        height: 5em;
+        padding: 5%;
     }
 
     #experienceZone{
