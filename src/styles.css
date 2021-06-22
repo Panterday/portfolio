@@ -593,9 +593,10 @@ body{
         width: 20%;
     }
 
-    #project1{
+    .project{
         flex-direction: column;
         padding: 0%;
+        width: 100vw;
     }
 
     .image{
@@ -609,6 +610,8 @@ body{
         border-radius: 4px;
         filter: none;
     }
+
+    
 
     .description{
         width: 100%;
