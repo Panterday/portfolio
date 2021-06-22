@@ -16,9 +16,13 @@ import logoGIT from '../assets/logoGIT.svg'
 
 import logoMenu from '../assets/prueba.svg'
 
-const divImg = document.querySelector('#imageP1');
+import expande from '../assets/expande.png'
+
 const divLog = document.querySelector('.contentSkillSet'); 
-const loadImage = (newIm, url)=>{
+
+const loadImage = (newIm, url, selector)=>{
+    const divImg = document.querySelector(selector);
+    
     const link = document.createElement('a');
     link.href = url;
     const img = document.createElement('img');
@@ -52,7 +56,7 @@ const loadMenuLogo = (image)=>{
 }
 
 const loadImages =()=>{
-    loadImage(img1, 'https://panterday.github.io/pizza-web/');
+    loadImage(img1, 'https://panterday.github.io/pizza-web/', '#imageP1');
     loadLogo(logoJS, 'Javascript (ECMAScript 6)'); 
     loadLogo(logoHTML, 'HTML 5'); 
     loadLogo(logoCSS, 'CSS 3');
@@ -64,8 +68,9 @@ const loadImages =()=>{
     loadLogo(logoGIT, 'GIT and GitHub');
     loadLogo(logoGSAP, 'Green Sock animation library');
     loadLogo(logoPS, 'Adobe Photoshop');
-
     loadMenuLogo(logoMenu); 
+
+    loadImage(expande, 'https://panterday.github.io/expande', '#imageP2'); 
 }
 
 export{
