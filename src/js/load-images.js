@@ -18,6 +18,8 @@ import logoMenu from '../assets/prueba.svg'
 
 import expande from '../assets/expande.png'
 
+import CRUD from '../assets/reactCRUD.png'
+
 const divLog = document.querySelector('.contentSkillSet'); 
 
 const loadImage = (newIm, url, selector)=>{
@@ -25,6 +27,7 @@ const loadImage = (newIm, url, selector)=>{
     
     const link = document.createElement('a');
     link.href = url;
+    link.target = '_blank'; 
     const img = document.createElement('img');
     img.classList.add('imgP1');
     img.src = newIm;
@@ -70,7 +73,9 @@ const loadImages =()=>{
     loadLogo(logoPS, 'Adobe Photoshop');
     loadMenuLogo(logoMenu); 
 
-    loadImage(expande, 'https://panterday.github.io/expande', '#imageP2'); 
+    loadImage(expande, 'https://panterday.github.io/expande', '#imageP2');
+
+    loadImage(CRUD, 'https://panterday.github.io/Panterday-CRUD-React-Material-UI/', '#imageP3'); 
 }
 
 export{

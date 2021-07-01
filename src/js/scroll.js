@@ -25,9 +25,9 @@ export const scrollAnimations = ()=>{
         duration: 1.5
     })
 
-    gsap.from('.imgP1', {
+    gsap.from('#imageP1', {
         scrollTrigger: {
-            trigger: '.imgP1',
+            trigger: '#imageP1',
             start: 'top 80%',
         }, 
         y: 50,
@@ -35,9 +35,49 @@ export const scrollAnimations = ()=>{
         duration: 1.5
     })
 
-    gsap.from('.description', {
+    gsap.from('#description1', {
         scrollTrigger: {
-            trigger: '.description',
+            trigger: '#description1',
+            start: 'top 80%',
+        }, 
+        x: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('#imageP2', {
+        scrollTrigger: {
+            trigger: '#imageP2',
+            start: 'top 80%',
+        }, 
+        y: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('#description2', {
+        scrollTrigger: {
+            trigger: '#description2',
+            start: 'top 80%',
+        }, 
+        x: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('#imageP3', {
+        scrollTrigger: {
+            trigger: '#imageP3',
+            start: 'top 80%',
+        }, 
+        y: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('#description3', {
+        scrollTrigger: {
+            trigger: '#description3',
             start: 'top 80%',
         }, 
         x: 50,
