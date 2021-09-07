@@ -19,6 +19,7 @@ import logoMenu from '../assets/prueba.svg'
 import expande from '../assets/expande.png'
 
 import CRUD from '../assets/reactCRUD.png'
+import moviesReact from '../assets/moviesReact.png'
 
 const divLog = document.querySelector('.contentSkillSet'); 
 
@@ -75,7 +76,9 @@ const loadImages =()=>{
 
     loadImage(expande, 'https://panterday.github.io/expande', '#imageP2');
 
-    loadImage(CRUD, 'https://panterday.github.io/Panterday-CRUD-React-Material-UI/', '#imageP3'); 
+    loadImage(CRUD, 'https://panterday.github.io/Panterday-CRUD-React-Material-UI/', '#imageP3');
+    
+    loadImage(moviesReact, 'https://panterday.github.io/movies-app/#/', '#imageP4')
 }
 
 export{

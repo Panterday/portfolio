@@ -85,6 +85,26 @@ export const scrollAnimations = ()=>{
         duration: 1.5
     })
 
+    gsap.from('#imageP4', {
+        scrollTrigger: {
+            trigger: '#imageP4',
+            start: 'top 80%',
+        }, 
+        y: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
+    gsap.from('#description4', {
+        scrollTrigger: {
+            trigger: '#description4',
+            start: 'top 80%',
+        }, 
+        x: 50,
+        alpha: 0,
+        duration: 1.5
+    })
+
     gsap.from('#skillSetTitle', {
         scrollTrigger: {
             trigger: '#skillSetTitle',
